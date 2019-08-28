@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background-color: #2c2c2c;
+}
+.bg {
+    background-color: #2c2c2c;
+    height: 100vh; 
+    transition: 1s;
+}
+.redCircle,
+.greenCircle,
+.blueCircle,
+.orangeCircle {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    border: white solid 2px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+.redCircle {
+    background-color: red;
+    top: 10vh;
+    left: 10vw;
+}
+.greenCircle {
+    background-color: green;
+    top: 10vh;
+    left: 80vw;
+}
+.blueCircle {
+    background-color: blue;
+    bottom: 10vh;
+    left: 80vw;
+}
+.orangeCircle {
+    background-color: orange;
+    bottom: 10vh;
+    left: 10vw;
+}
+.bg p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 100vh;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    transition: 1 s;   
+}
+div.redCircle:hover~div.bg {
+    background-color: red;
+}
+div.greenCircle:hover~div.bg {
+    background-color: green;
+}
+div.blueCircle:hover~div.bg {
+    background-color: blue;
+}
+div.orangeCircle:hover~div.bg {
+    background-color: orange;
+}
+div.redCircle:hover~div.bg p.red {
+    opacity: 1;
+}
+div.greenCircle:hover~div.bg p.green {
+    opacity: 1;
+}
+div.blueCircle:hover~div.bg p.blue {
+    opacity: 1;
+}
+div.orangeCircle:hover~div.bg p.orange {
+    opacity: 1;
+}
